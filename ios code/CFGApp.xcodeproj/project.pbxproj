@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA03AF2A1BE4824F00175366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03AF291BE4824F00175366 /* main.m */; };
+		CA03AF2D1BE4824F00175366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03AF2C1BE4824F00175366 /* AppDelegate.m */; };
+		CA03AF301BE4824F00175366 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03AF2F1BE4824F00175366 /* ViewController.m */; };
+		CA03AF331BE4824F00175366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF311BE4824F00175366 /* Main.storyboard */; };
+		CA03AF351BE4824F00175366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF341BE4824F00175366 /* Assets.xcassets */; };
+		CA03AF381BE4824F00175366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF361BE4824F00175366 /* LaunchScreen.storyboard */; };
+		CA03AF431BE4824F00175366 /* CFGAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03AF421BE4824F00175366 /* CFGAppTests.m */; };
+		CA03AF4E1BE4824F00175366 /* CFGAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA03AF4D1BE4824F00175366 /* CFGAppUITests.m */; };
+		CA03AF5E1BE49CCA00175366 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF5D1BE49CCA00175366 /* Images.xcassets */; };
+		CA03AF621BE4A0D500175366 /* rsz_gwx2-6.png in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF611BE4A0D500175366 /* rsz_gwx2-6.png */; };
+		CA03AF641BE4A15A00175366 /* rsz_2gwx2-6.png in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF631BE4A15A00175366 /* rsz_2gwx2-6.png */; };
+		CA03AF7B1BE4BA7800175366 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA03AF781BE4BA7800175366 /* FBSDKCoreKit.framework */; };
+		CA03AF7C1BE4BA7800175366 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA03AF791BE4BA7800175366 /* FBSDKLoginKit.framework */; };
+		CA03AF7D1BE4BA7800175366 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA03AF7A1BE4BA7800175366 /* FBSDKShareKit.framework */; };
+		CA03AF7F1BE4BAF100175366 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA03AF7E1BE4BAF100175366 /* Bolts.framework */; };
+		CA03AF811BE4DA9700175366 /* login-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF801BE4DA9700175366 /* login-facebook.png */; };
+		CA03AF831BE4E8A100175366 /* GOODWILL_logo_blue_cyan-01_2313415591_mw.png in Resources */ = {isa = PBXBuildFile; fileRef = CA03AF821BE4E8A100175366 /* GOODWILL_logo_blue_cyan-01_2313415591_mw.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA03AF3F1BE4824F00175366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA03AF1D1BE4824F00175366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA03AF241BE4824F00175366;
+			remoteInfo = CFGApp;
+		};
+		CA03AF4A1BE4824F00175366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA03AF1D1BE4824F00175366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA03AF241BE4824F00175366;
+			remoteInfo = CFGApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA03AF251BE4824F00175366 /* Goodwill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goodwill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA03AF291BE4824F00175366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA03AF2B1BE4824F00175366 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA03AF2C1BE4824F00175366 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA03AF2E1BE4824F00175366 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CA03AF2F1BE4824F00175366 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA03AF321BE4824F00175366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA03AF341BE4824F00175366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA03AF371BE4824F00175366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA03AF391BE4824F00175366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA03AF3E1BE4824F00175366 /* CFGAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFGAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA03AF421BE4824F00175366 /* CFGAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFGAppTests.m; sourceTree = "<group>"; };
+		CA03AF441BE4824F00175366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA03AF491BE4824F00175366 /* CFGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA03AF4D1BE4824F00175366 /* CFGAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFGAppUITests.m; sourceTree = "<group>"; };
+		CA03AF4F1BE4824F00175366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA03AF5D1BE49CCA00175366 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CA03AF611BE4A0D500175366 /* rsz_gwx2-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rsz_gwx2-6.png"; path = "../../../Downloads/rsz_gwx2-6.png"; sourceTree = "<group>"; };
+		CA03AF631BE4A15A00175366 /* rsz_2gwx2-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rsz_2gwx2-6.png"; path = "../../../Downloads/rsz_2gwx2-6.png"; sourceTree = "<group>"; };
+		CA03AF781BE4BA7800175366 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-20151026/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		CA03AF791BE4BA7800175366 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-20151026/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		CA03AF7A1BE4BA7800175366 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-20151026/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		CA03AF7E1BE4BAF100175366 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/FacebookSDKs-iOS-20151026/Bolts.framework"; sourceTree = "<group>"; };
+		CA03AF801BE4DA9700175366 /* login-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-facebook.png"; path = "../../../Downloads/login-facebook.png"; sourceTree = "<group>"; };
+		CA03AF821BE4E8A100175366 /* GOODWILL_logo_blue_cyan-01_2313415591_mw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GOODWILL_logo_blue_cyan-01_2313415591_mw.png"; path = "../../../Downloads/GOODWILL_logo_blue_cyan-01_2313415591_mw.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA03AF221BE4824F00175366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03AF7F1BE4BAF100175366 /* Bolts.framework in Frameworks */,
+				CA03AF7B1BE4BA7800175366 /* FBSDKCoreKit.framework in Frameworks */,
+				CA03AF7C1BE4BA7800175366 /* FBSDKLoginKit.framework in Frameworks */,
+				CA03AF7D1BE4BA7800175366 /* FBSDKShareKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF3B1BE4824F00175366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF461BE4824F00175366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA03AF1C1BE4824F00175366 = {
+			isa = PBXGroup;
+			children = (
+				CA03AF7E1BE4BAF100175366 /* Bolts.framework */,
+				CA03AF781BE4BA7800175366 /* FBSDKCoreKit.framework */,
+				CA03AF791BE4BA7800175366 /* FBSDKLoginKit.framework */,
+				CA03AF7A1BE4BA7800175366 /* FBSDKShareKit.framework */,
+				CA03AF271BE4824F00175366 /* CFGApp */,
+				CA03AF411BE4824F00175366 /* CFGAppTests */,
+				CA03AF4C1BE4824F00175366 /* CFGAppUITests */,
+				CA03AF261BE4824F00175366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA03AF261BE4824F00175366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA03AF251BE4824F00175366 /* Goodwill.app */,
+				CA03AF3E1BE4824F00175366 /* CFGAppTests.xctest */,
+				CA03AF491BE4824F00175366 /* CFGAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA03AF271BE4824F00175366 /* CFGApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA03AF2B1BE4824F00175366 /* AppDelegate.h */,
+				CA03AF2C1BE4824F00175366 /* AppDelegate.m */,
+				CA03AF2E1BE4824F00175366 /* ViewController.h */,
+				CA03AF2F1BE4824F00175366 /* ViewController.m */,
+				CA03AF311BE4824F00175366 /* Main.storyboard */,
+				CA03AF341BE4824F00175366 /* Assets.xcassets */,
+				CA03AF361BE4824F00175366 /* LaunchScreen.storyboard */,
+				CA03AF391BE4824F00175366 /* Info.plist */,
+				CA03AF5D1BE49CCA00175366 /* Images.xcassets */,
+				CA03AF281BE4824F00175366 /* Supporting Files */,
+			);
+			path = CFGApp;
+			sourceTree = "<group>";
+		};
+		CA03AF281BE4824F00175366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA03AF821BE4E8A100175366 /* GOODWILL_logo_blue_cyan-01_2313415591_mw.png */,
+				CA03AF801BE4DA9700175366 /* login-facebook.png */,
+				CA03AF631BE4A15A00175366 /* rsz_2gwx2-6.png */,
+				CA03AF611BE4A0D500175366 /* rsz_gwx2-6.png */,
+				CA03AF291BE4824F00175366 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA03AF411BE4824F00175366 /* CFGAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA03AF421BE4824F00175366 /* CFGAppTests.m */,
+				CA03AF441BE4824F00175366 /* Info.plist */,
+			);
+			path = CFGAppTests;
+			sourceTree = "<group>";
+		};
+		CA03AF4C1BE4824F00175366 /* CFGAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA03AF4D1BE4824F00175366 /* CFGAppUITests.m */,
+				CA03AF4F1BE4824F00175366 /* Info.plist */,
+			);
+			path = CFGAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA03AF241BE4824F00175366 /* CFGApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA03AF521BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGApp" */;
+			buildPhases = (
+				CA03AF211BE4824F00175366 /* Sources */,
+				CA03AF221BE4824F00175366 /* Frameworks */,
+				CA03AF231BE4824F00175366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CFGApp;
+			productName = CFGApp;
+			productReference = CA03AF251BE4824F00175366 /* Goodwill.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA03AF3D1BE4824F00175366 /* CFGAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA03AF551BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGAppTests" */;
+			buildPhases = (
+				CA03AF3A1BE4824F00175366 /* Sources */,
+				CA03AF3B1BE4824F00175366 /* Frameworks */,
+				CA03AF3C1BE4824F00175366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA03AF401BE4824F00175366 /* PBXTargetDependency */,
+			);
+			name = CFGAppTests;
+			productName = CFGAppTests;
+			productReference = CA03AF3E1BE4824F00175366 /* CFGAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA03AF481BE4824F00175366 /* CFGAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA03AF581BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGAppUITests" */;
+			buildPhases = (
+				CA03AF451BE4824F00175366 /* Sources */,
+				CA03AF461BE4824F00175366 /* Frameworks */,
+				CA03AF471BE4824F00175366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA03AF4B1BE4824F00175366 /* PBXTargetDependency */,
+			);
+			name = CFGAppUITests;
+			productName = CFGAppUITests;
+			productReference = CA03AF491BE4824F00175366 /* CFGAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA03AF1D1BE4824F00175366 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Brandon Perry";
+				TargetAttributes = {
+					CA03AF241BE4824F00175366 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CA03AF3D1BE4824F00175366 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CA03AF241BE4824F00175366;
+					};
+					CA03AF481BE4824F00175366 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CA03AF241BE4824F00175366;
+					};
+				};
+			};
+			buildConfigurationList = CA03AF201BE4824F00175366 /* Build configuration list for PBXProject "CFGApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA03AF1C1BE4824F00175366;
+			productRefGroup = CA03AF261BE4824F00175366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA03AF241BE4824F00175366 /* CFGApp */,
+				CA03AF3D1BE4824F00175366 /* CFGAppTests */,
+				CA03AF481BE4824F00175366 /* CFGAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA03AF231BE4824F00175366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03AF621BE4A0D500175366 /* rsz_gwx2-6.png in Resources */,
+				CA03AF381BE4824F00175366 /* LaunchScreen.storyboard in Resources */,
+				CA03AF811BE4DA9700175366 /* login-facebook.png in Resources */,
+				CA03AF831BE4E8A100175366 /* GOODWILL_logo_blue_cyan-01_2313415591_mw.png in Resources */,
+				CA03AF5E1BE49CCA00175366 /* Images.xcassets in Resources */,
+				CA03AF641BE4A15A00175366 /* rsz_2gwx2-6.png in Resources */,
+				CA03AF351BE4824F00175366 /* Assets.xcassets in Resources */,
+				CA03AF331BE4824F00175366 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF3C1BE4824F00175366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF471BE4824F00175366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA03AF211BE4824F00175366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03AF301BE4824F00175366 /* ViewController.m in Sources */,
+				CA03AF2D1BE4824F00175366 /* AppDelegate.m in Sources */,
+				CA03AF2A1BE4824F00175366 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF3A1BE4824F00175366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03AF431BE4824F00175366 /* CFGAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA03AF451BE4824F00175366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA03AF4E1BE4824F00175366 /* CFGAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA03AF401BE4824F00175366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA03AF241BE4824F00175366 /* CFGApp */;
+			targetProxy = CA03AF3F1BE4824F00175366 /* PBXContainerItemProxy */;
+		};
+		CA03AF4B1BE4824F00175366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA03AF241BE4824F00175366 /* CFGApp */;
+			targetProxy = CA03AF4A1BE4824F00175366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA03AF311BE4824F00175366 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA03AF321BE4824F00175366 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA03AF361BE4824F00175366 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA03AF371BE4824F00175366 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA03AF501BE4824F00175366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA03AF511BE4824F00175366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA03AF531BE4824F00175366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/Brandon/Downloads/FacebookSDKs-iOS-20151026";
+				INFOPLIST_FILE = CFGApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGApp;
+				PRODUCT_NAME = Goodwill;
+			};
+			name = Debug;
+		};
+		CA03AF541BE4824F00175366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/Brandon/Downloads/FacebookSDKs-iOS-20151026";
+				INFOPLIST_FILE = CFGApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGApp;
+				PRODUCT_NAME = Goodwill;
+			};
+			name = Release;
+		};
+		CA03AF561BE4824F00175366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CFGAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFGApp.app/CFGApp";
+			};
+			name = Debug;
+		};
+		CA03AF571BE4824F00175366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CFGAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFGApp.app/CFGApp";
+			};
+			name = Release;
+		};
+		CA03AF591BE4824F00175366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CFGAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CFGApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CA03AF5A1BE4824F00175366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CFGAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonperry.CFGAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CFGApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA03AF201BE4824F00175366 /* Build configuration list for PBXProject "CFGApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA03AF501BE4824F00175366 /* Debug */,
+				CA03AF511BE4824F00175366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA03AF521BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA03AF531BE4824F00175366 /* Debug */,
+				CA03AF541BE4824F00175366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA03AF551BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA03AF561BE4824F00175366 /* Debug */,
+				CA03AF571BE4824F00175366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CA03AF581BE4824F00175366 /* Build configuration list for PBXNativeTarget "CFGAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA03AF591BE4824F00175366 /* Debug */,
+				CA03AF5A1BE4824F00175366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA03AF1D1BE4824F00175366 /* Project object */;
+}
