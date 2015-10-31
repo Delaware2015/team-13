@@ -1,0 +1,190 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+USE `mydb` ;
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Person`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Person` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Person` (
+  `idPerson` INT NOT NULL,
+  `zip` INT NOT NULL,
+  `phone_num` VARCHAR(45) NULL,
+  PRIMARY KEY (`idPerson`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 100
+PACK_KEYS = Default;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Purchases`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Purchases` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Purchases` (
+  `idPurchases` INT NOT NULL,
+  `idPerson` INT NOT NULL,
+  `date` DATETIME NOT NULL,
+  `sales_total` DECIMAL(3,2) NOT NULL,
+  `date` DATETIME NULL,
+  PRIMARY KEY (`idPurchases`),
+  INDEX `idPerson_idx` (`idPerson` ASC),
+  CONSTRAINT `idPerson`
+    FOREIGN KEY (`idPerson`)
+    REFERENCES `mydb`.`Person` (`idPerson`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 001
+ROW_FORMAT = Default;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Clothing`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Clothing` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Clothing` (
+  `idClothing` INT NOT NULL,
+  `idType` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idClothing`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Houseware`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Houseware` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Houseware` (
+  `idHouseware` INT NOT NULL,
+  `idType` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`idHouseware`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 12;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Donations`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Donations` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Donations` (
+  `idDonations` INT NOT NULL,
+  `idType` INT NOT NULL,
+  `idPerson` INT NOT NULL,
+  `quantity` INT NULL,
+  `price` DECIMAL(3,2) NULL,
+  PRIMARY KEY (`idDonations`),
+  INDEX `idType_idx` (`idType` ASC),
+  INDEX `idPerson_idx` (`idPerson` ASC),
+  CONSTRAINT `idType`
+    FOREIGN KEY (`idType`)
+    REFERENCES `mydb`.`Clothing` (`idClothing`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `idType`
+    FOREIGN KEY (`idType`)
+    REFERENCES `mydb`.`Houseware` (`idHouseware`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `idPerson`
+    FOREIGN KEY (`idPerson`)
+    REFERENCES `mydb`.`Person` (`idPerson`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 1;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`Person`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`Person` (`idPerson`, `zip`, `phone_num`) VALUES (100, 20190, '5405203190');
+INSERT INTO `mydb`.`Person` (`idPerson`, `zip`, `phone_num`) VALUES (101, 24017, '7034079965');
+INSERT INTO `mydb`.`Person` (`idPerson`, `zip`, `phone_num`) VALUES (102, 02218, '5405635764');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`Purchases`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`Purchases` (`idPurchases`, `idPerson`, `date`, `sales_total`, `date`) VALUES (1, 100, '10-21-2015', 100.10, NULL);
+INSERT INTO `mydb`.`Purchases` (`idPurchases`, `idPerson`, `date`, `sales_total`, `date`) VALUES (2, 100, '10-22-2015', 52.48, NULL);
+INSERT INTO `mydb`.`Purchases` (`idPurchases`, `idPerson`, `date`, `sales_total`, `date`) VALUES (3, 101, '10-22-2015', 30.00, NULL);
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`Clothing`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (1, 'Top');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (2, 'Bottom');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (3, 'Dress');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (4, 'Suit');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (5, 'Sweats');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (6, 'Sleepwear');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (7, 'Outerwear');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (8, 'Swimwear');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (9, 'Shoes');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (10, 'HandcarriedItem');
+INSERT INTO `mydb`.`Clothing` (`idClothing`, `idType`) VALUES (11, 'Belt');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`Houseware`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (12, 'Electrical');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (13, 'Computer');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (14, 'Kitchen');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (15, 'Furniture');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (16, 'Bedding');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (17, 'ToysGames');
+INSERT INTO `mydb`.`Houseware` (`idHouseware`, `idType`) VALUES (18, 'BooksMultimedia');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`Donations`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (1, 1, 100, 3, 3.00);
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (2, 2, 101, 2, 1.25);
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (3, 4, 101, 1, 2.00);
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (4, 13, 102, 2, 3.00);
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (5, 14, 100, 1, 5.00);
+INSERT INTO `mydb`.`Donations` (`idDonations`, `idType`, `idPerson`, `quantity`, `price`) VALUES (6, 12, 102, 5, 2.25);
+
+COMMIT;
+
