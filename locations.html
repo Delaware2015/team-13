@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Goodwill Delaware - Acceptable Donations</title>
+    <title>Goodwill Delaware - Locations</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li ><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Record Transaction<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -45,9 +45,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="locations.html">Locations</a></li>
+            <li class="active"><a href="locations.html">Locations</a></li>
             <li><a href="#">Store Hours</a></li>
-            <li class="active"><a href="acceptable_items.html">Acceptable Donations</a></li>
+            <li><a href="acceptable_items.html">Acceptable Donations</a></li>
           </ul>
         </li>
       </ul>
@@ -59,67 +59,66 @@
 
 
       <div class="page-header">
-        <h1>Donation Criteria</h1>
+        <h2>Delaware Locations</h2>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <table class="table" id="acceptable_items">
+          <table class="table">
             <thead>
               <tr>
-                  <th>Acceptable Items</th>
-                  <th>Unacceptable Items</th>
+                  <th>Street Address</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Zip</th>
+                  <th>Country</th>
+                  <th>Phone Number</th>
               </tr>
             </thead>
-            <tbody id="acceptable_items">
+            <tbody id="locations_table">
                 
             </tbody>
           </table>
         </div>
 
           <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script>
-  $.ajax({
-  url:"https://www.kimonolabs.com/api/7qfwzzy6?apikey=bGNPjrIAVkb2MBA0iTzgt42lnrspqIvw",
-  crossDomain: true,
-  dataType: "jsonp",
-  success: function (response) {
-    var results = response['results'];
-    var acceptableItems = results['collection1'];
-    var unacceptableItems = results['collection2'];
-    var i;
-      
-    var table = document.getElementById('acceptable_items');
-    for (i = 0; i < acceptableItems.length; i++) 
-    { 
-        var item = acceptableItems[i];
-        //var item1 = unacceptableItems[i];
-        var valueToWrite = item['Acceptable Items'];
-        //var valueToWrite1 = item1['Nonacceptable Items'];
-        var row = table.insertRow(i + 1);
-        var cell1 = row.insertCell(0);
-        //var cell2 = row.insertCell(1);
-        cell1.innerHTML = valueToWrite;
-        //cell2.innerHTML = valueToWrite1;
-        if (i < 6)
-        {
-            addUnaccpetableItem(row);
-        }
-    }
-      
-    function addUnaccpetableItem(row)
-    {
-          var item1 = unacceptableItems[i];
-          var valueToWrite1 = item1['Nonacceptable Items'];
-          var cell2 = row.insertCell(1);
-          cell2.innerHTML = valueToWrite1;
-    }
-      
-  },
-  error: function (xhr, status) {
-    //handle errors
-  }
-});</script>
+        <script>
+          $.ajax({
+          url:"https://www.kimonolabs.com/api/6ai2xj3o?apikey=bGNPjrIAVkb2MBA0iTzgt42lnrspqIvw",
+          crossDomain: true,
+          dataType: "jsonp",
+          success: function (response) {
+            var results = response['results'];
+            var location_collection = results['collection1'];
+            var table = document.getElementById('locations_table');
+            var i;
+            for (i = 0; i < location_collection.length; i++)
+            {
+                var item = location_collection[i];
+                var addressline1 = item["AddressLine1"];
+                var addressline2 = item["AddressLine2"];
+                var country = item["Country"];
+                var phone = item["Phone"];
+                var row = table.insertRow(i);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                var cell5 = row.insertCell(4);
+                var cell6 = row.insertCell(5);
+                cell1.innerHTML = addressline1;
+                if (addressline2[1] === "DE") addressline2[1] = "19701";
+                cell2.innerHTML = addressline2[0];
+                cell3.innerHTML = "Delaware";
+                cell4.innerHTML = addressline2[1];
+                cell5.innerHTML = "United States";
+                cell6.innerHTML = phone;
+            }
+            
+          },
+          error: function (xhr, status) {
+            //handle errors
+          }
+        });</script>
 
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
